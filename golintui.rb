@@ -2,24 +2,24 @@
 class Golintui < Formula
   desc "A simple terminal UI for golangci-lint"
   homepage "https://github.com/nakabonne/golintui"
-  version "0.2.2"
+  version "0.2.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nakabonne/golintui/releases/download/v0.2.2/golintui_0.2.2_Darwin_x86_64.tar.gz"
-    sha256 "2676ce5d32ce0d8eec612a041e9f500deaffa596917a6a737b92f279584da208"
+    url "https://github.com/nakabonne/golintui/releases/download/v0.2.3/golintui_0.2.3_Darwin_x86_64.tar.gz"
+    sha256 "fe30113c52e83033aced5acf68131f22a44600a481ebf0471945469a71024308"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/nakabonne/golintui/releases/download/v0.2.2/golintui_0.2.2_Linux_x86_64.tar.gz"
-      sha256 "7de40f5eeda2b9c04038feb5e064be8c19672a281c668f9f730c9844e14e4bab"
+      url "https://github.com/nakabonne/golintui/releases/download/v0.2.3/golintui_0.2.3_Linux_x86_64.tar.gz"
+      sha256 "5e8b712157fc62ef114a27a6339decdff2dac8120f7b696323fc426a11baad87"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nakabonne/golintui/releases/download/v0.2.2/golintui_0.2.2_Linux_arm64.tar.gz"
-        sha256 "3e18125d33962171b7dd27094e1164dea49947233a59baeaae2a315f2b2de367"
+        url "https://github.com/nakabonne/golintui/releases/download/v0.2.3/golintui_0.2.3_Linux_arm64.tar.gz"
+        sha256 "b0817b212cfd21129c3c6e775e3622566b36b50f878002f8c974ed2becc5187b"
       else
-        url "https://github.com/nakabonne/golintui/releases/download/v0.2.2/golintui_0.2.2_Linux_armv6.tar.gz"
-        sha256 "82f03242abcf50dcb6d499f1143af94dfbc08acd848cb90b58ff556e6afcb3f5"
+        url "https://github.com/nakabonne/golintui/releases/download/v0.2.3/golintui_0.2.3_Linux_armv6.tar.gz"
+        sha256 "01b700ccb16907cf45df9cecb01b8d9a7f0bdfa3855e35138ba7f60c8fdbb95b"
       end
     end
   end
